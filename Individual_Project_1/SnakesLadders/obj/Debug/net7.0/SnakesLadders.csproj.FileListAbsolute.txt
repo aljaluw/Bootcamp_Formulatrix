@@ -1,0 +1,15 @@
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.csproj.AssemblyReference.cache
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.AssemblyInfoInputs.cache
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.AssemblyInfo.cs
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.csproj.CoreCompileInputs.cache
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\bin\Debug\net7.0\SnakesLadders.exe
+d:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\bin\Debug\net7.0\SnakesLadders.deps.json
+d:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\bin\Debug\net7.0\SnakesLadders.runtimeconfig.json
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\bin\Debug\net7.0\SnakesLadders.dll
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\bin\Debug\net7.0\SnakesLadders.pdb
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.dll
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\refint\SnakesLadders.dll
+D:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.pdb
+d:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\SnakesLadders.genruntimeconfig.cache
+d:\Bootcamp_Formulatrix\Individual_Project_1\SnakesLadders\obj\Debug\net7.0\ref\SnakesLadders.dll
