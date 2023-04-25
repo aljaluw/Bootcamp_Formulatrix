@@ -15,10 +15,14 @@ public class Board
     }
 
     public Board(int x, int y,
-        Dictionary<int, int> ladders = null, Dictionary<int, int> snakes = null)
+        (int, int)[] ladders = null, (int, int)[] snakes = null)
     {
         GameBoard = CreateBoard(x * y);
+
+        ladders = ladders ?? Array.Empty<(int, int)>();
+        snakes = snakes ?? Array.Empty<(int, int)>();
     }
+    
     private int[] CreateBoard(int size)
     {
         int[] board = new int[size];
