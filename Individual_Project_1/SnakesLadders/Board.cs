@@ -9,14 +9,14 @@ public class Board
         GameBoard = CreateBoard(100);
     }
 
-    public Board(int altura, int largo,
+    public Board(int x, int y,
         (int, int)[] laddersAndSnakes = null)
     {
 
         // Ensure non-null arrays.
         laddersAndSnakes = laddersAndSnakes ?? Array.Empty<(int, int)>();
 
-        GameBoard = CreateBoard(altura * largo);
+        GameBoard = CreateBoard(x * y);
         
         CreateSnakesAndLadders(laddersAndSnakes);
     }
