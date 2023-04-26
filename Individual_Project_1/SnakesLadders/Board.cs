@@ -1,28 +1,26 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-
-namespace SnakesLadders;
+﻿namespace SnakesLadders;
 
 public class Board
 {
     public int[] GameBoard { get; }
-    public Dictionary<int, int> Snakes { get; } = new Dictionary<int, int>();
-    public Dictionary<int, int> Ladders { get; } = new Dictionary<int, int>();
+
     public Board()
     {
         GameBoard = CreateBoard(100);
     }
 
-    public Board(int x, int y,
-        (int, int)[] ladders = null, (int, int)[] snakes = null)
+    public Board(int altura, int largo,
+        (int, int)[] laddersAndSnakes = null)
     {
-        GameBoard = CreateBoard(x * y);
 
-        ladders = ladders ?? Array.Empty<(int, int)>();
-        snakes = snakes ?? Array.Empty<(int, int)>();
+        // Ensure non-null arrays.
+        laddersAndSnakes = laddersAndSnakes ?? Array.Empty<(int, int)>();
+
+        GameBoard = CreateBoard(altura * largo);
+        
+        CreateSnakesAndLadders(laddersAndSnakes);
     }
-    
+
     private int[] CreateBoard(int size)
     {
         int[] board = new int[size];
@@ -30,5 +28,12 @@ public class Board
             board[i] = i;
         }
         return board;
+    }
+
+    private void CreateSnakesAndLadders((int, int)[] jumps)
+    {
+        foreach (var (from, to) in jumps) {
+            GameBoard[from - 1] = to - 1;
+        }
     }
 }

@@ -2,14 +2,12 @@ namespace SnakesLadders;
 
 public class Player : Dice
 {
-    private static readonly Random _rnd = new Random();
     private readonly int[] _board;
 
     private int _position;
     public int Position => _position + 1;
 
     public string NickName { get; }
-    public Colors colors { get; }
     public bool Winner { get; private set; }
 
     public Player(string nickName, Board board)
@@ -20,11 +18,27 @@ public class Player : Dice
 
     public void Move()
     {
-        if (_position + DiceResult < _board.Length) {
-            _position = _board[DiceResult + _position];
-            if (_position == _board.Length - 1) {
+        int previousPosition = _position;
+        int newPosition = DiceResult + _position;
+
+        if (newPosition < _board.Length) // check if new position is within bounds
+        {
+            _position = _board[newPosition];
+
+            if (_position == _board.Length - 1)
+            {
                 Winner = true;
             }
+
+            if (_board[newPosition] != newPosition)
+            {
+                string jumpType = _position > previousPosition ? "Ladder" : "Snake";
+                Console.WriteLine($"You have landed on a {jumpType} and moved to position {_position + 1}.");
+            }
+        }
+        else
+        {
+            Console.WriteLine("You rolled too high! Try again.");
         }
     }
 }

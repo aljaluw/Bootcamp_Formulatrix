@@ -5,7 +5,7 @@ public class Dice
     private static readonly int _numberOfSides = 6;
     private static readonly Random _rnd = new Random();
 
-    public int DiceResult { get; private set; }
+    public int DiceResult { get; set; }
 
     public void Roll()
     {

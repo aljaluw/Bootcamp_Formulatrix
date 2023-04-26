@@ -1,24 +1,21 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections;
+using System;
 
 namespace SnakesLadders;
-
 class Program
 {
-    static void Main(string[] args)
+    public static void Main()
     {
-        (int, int)[] ladders = {
+        (int, int)[] laddersAndSnakes = {
             (2, 38), (7, 14), (8, 31), (16, 26), (21, 42),
-            (28, 84), (36, 44), (51, 67), (71, 91), (78, 98), (87, 94)
-        };
-
-        (int, int)[] snakes = {
+            (28, 84), (36, 44), (51, 68), (71, 91), (78, 98), (87, 94),
             (15, 5), (48, 10), (45, 24), (61, 18), (63, 59),
             (73, 52), (88, 67), (91, 87), (94, 74), (98, 79)
         };
 
-        var board = new Board(10, 10, ladders, snakes); // todo
+        Rules.CheckLaddersAndSnakes(laddersAndSnakes);
+
+        var board = new Board(10, 10, laddersAndSnakes);
         var players = new List<Player>();
 
         int numPlayers;
@@ -52,10 +49,15 @@ class Program
 
                 currentPlayer.Roll();
                 Console.WriteLine($"Dice's result: {currentPlayer.DiceResult} ");
+                
 
                 int previousPosition = currentPlayer.Position;
                 currentPlayer.Move();
                 Console.WriteLine($"{currentPlayer.NickName} moved from cell [{previousPosition}] ====> to cell [{currentPlayer.Position}]");
+                if (currentPlayer.DiceResult == 6) {
+                Console.WriteLine("Congratulations! You rolled a 6 and get to roll again.");
+                continue;
+                }
 
                 if (currentPlayer.Winner) {
                     Console.WriteLine($"Player {currentPlayer.NickName} won the game.");
@@ -68,4 +70,5 @@ class Program
         } while (pressed != 'A');
     }
 }
+
 
