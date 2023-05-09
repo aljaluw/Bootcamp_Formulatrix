@@ -1,0 +1,15 @@
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\bin\Debug\net7.0\Pizza.exe
+d:\Bootcamp_Formulatrix\Other stuff\Pizza\bin\Debug\net7.0\Pizza.deps.json
+d:\Bootcamp_Formulatrix\Other stuff\Pizza\bin\Debug\net7.0\Pizza.runtimeconfig.json
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\bin\Debug\net7.0\Pizza.dll
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\bin\Debug\net7.0\Pizza.pdb
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.csproj.AssemblyReference.cache
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.AssemblyInfoInputs.cache
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.AssemblyInfo.cs
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.csproj.CoreCompileInputs.cache
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.dll
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\refint\Pizza.dll
+D:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.pdb
+d:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\Pizza.genruntimeconfig.cache
+d:\Bootcamp_Formulatrix\Other stuff\Pizza\obj\Debug\net7.0\ref\Pizza.dll

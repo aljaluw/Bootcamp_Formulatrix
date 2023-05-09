@@ -1,6 +1,6 @@
 namespace SnakesLadders;
 
-public class Rules : Board
+public class Rules
 {
     public static void CheckLaddersAndSnakes((int, int)[] laddersAndSnakes)
     {

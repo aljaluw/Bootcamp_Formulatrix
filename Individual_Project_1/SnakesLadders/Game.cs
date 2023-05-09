@@ -46,6 +46,7 @@ class Program
 
             if (pressed == 'R') {
                 Console.WriteLine("--------------------------------");
+                Console.WriteLine(" ");
 
                 currentPlayer.Roll();
                 Console.WriteLine($"Dice's result: {currentPlayer.DiceResult} ");
@@ -63,7 +64,8 @@ class Program
                     Console.WriteLine($"Player {currentPlayer.NickName} won the game.");
                     break;
                 }
-
+                
+                Console.WriteLine(" ");
                 Console.WriteLine("--------------------------------");
                 count = (count + 1) % numPlayers;
             }
